@@ -15,6 +15,8 @@
 		ED5876B3226AE7C80011741B /* RoundedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876B2226AE7C80011741B /* RoundedTableViewCell.swift */; };
 		ED5876B5226AE8920011741B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876B4226AE8920011741B /* MenuItem.swift */; };
 		ED5876B7226AEAE70011741B /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876B6226AEAE70011741B /* SampleData.swift */; };
+		ED5876BA226AF4110011741B /* burrito.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED5876B9226AF4110011741B /* burrito.jpg */; };
+		ED5876BC226AFC780011741B /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876BB226AFC780011741B /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		ED5876B2226AE7C80011741B /* RoundedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTableViewCell.swift; sourceTree = "<group>"; };
 		ED5876B4226AE8920011741B /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		ED5876B6226AEAE70011741B /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		ED5876B9226AF4110011741B /* burrito.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = burrito.jpg; sourceTree = "<group>"; };
+		ED5876BB226AFC780011741B /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 		ED58768E226AE53D0011741B = {
 			isa = PBXGroup;
 			children = (
+				ED5876BB226AFC780011741B /* UIColorExtensions.swift */,
+				ED5876B8226AF4070011741B /* Images */,
 				ED587699226AE53E0011741B /* TableTransitional-View */,
 				ED587698226AE53E0011741B /* Products */,
 			);
@@ -105,6 +111,14 @@
 			path = "TableCell Classes";
 			sourceTree = "<group>";
 		};
+		ED5876B8226AF4070011741B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ED5876B9226AF4110011741B /* burrito.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED5876A5226AE5410011741B /* LaunchScreen.storyboard in Resources */,
+				ED5876BA226AF4110011741B /* burrito.jpg in Resources */,
 				ED5876A2226AE5410011741B /* Assets.xcassets in Resources */,
 				ED5876A0226AE53E0011741B /* Main.storyboard in Resources */,
 			);
@@ -179,6 +194,7 @@
 				ED5876B0226AE77C0011741B /* MainTableViewController.swift in Sources */,
 				ED5876B5226AE8920011741B /* MenuItem.swift in Sources */,
 				ED58769B226AE53E0011741B /* AppDelegate.swift in Sources */,
+				ED5876BC226AFC780011741B /* UIColorExtensions.swift in Sources */,
 				ED5876B7226AEAE70011741B /* SampleData.swift in Sources */,
 				ED5876B3226AE7C80011741B /* RoundedTableViewCell.swift in Sources */,
 			);

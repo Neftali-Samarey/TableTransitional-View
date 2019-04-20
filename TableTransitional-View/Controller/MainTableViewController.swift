@@ -10,11 +10,12 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    let menuItems = ["Test", "Test"]
+    let menuItems = ["Mexican Food", "Burritos", "Quesadillas", "Fajitas"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Menu"
+        self.tableView.backgroundColor = UIColor.spanishYellow()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -23,6 +24,22 @@ class MainTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Trending"
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let font = UIFont(name: ".SFUIText-Bold", size: 31)!
+        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+        header.textLabel?.font = font
+      
+        header.textLabel?.textAlignment = NSTextAlignment.left
+        
+        
+    }
+    
+  
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -36,16 +53,26 @@ class MainTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RoundedTableViewCell
 
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.clear // change this
+        cell.selectedBackgroundView = backgroundView
         // Configure the cell...
-        cell.textLabel?.text = menuItems[indexPath.row]
+        
+        cell.itemNameLabel.text = menuItems[indexPath.row]
+      //  cell.textLabel?.text = menuItems[indexPath.row]
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140.0
     }
     /*
     // Override to support conditional editing of the table view.
