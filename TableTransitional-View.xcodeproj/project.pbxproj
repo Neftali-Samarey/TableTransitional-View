@@ -13,6 +13,8 @@
 		ED5876A5226AE5410011741B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5876A3226AE5410011741B /* LaunchScreen.storyboard */; };
 		ED5876B0226AE77C0011741B /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876AF226AE77C0011741B /* MainTableViewController.swift */; };
 		ED5876B3226AE7C80011741B /* RoundedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876B2226AE7C80011741B /* RoundedTableViewCell.swift */; };
+		ED5876B5226AE8920011741B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876B4226AE8920011741B /* MenuItem.swift */; };
+		ED5876B7226AEAE70011741B /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5876B6226AEAE70011741B /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		ED5876A6226AE5410011741B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED5876AF226AE77C0011741B /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		ED5876B2226AE7C80011741B /* RoundedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTableViewCell.swift; sourceTree = "<group>"; };
+		ED5876B4226AE8920011741B /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		ED5876B6226AEAE70011741B /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 		ED5876AE226AE75A0011741B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ED5876B4226AE8920011741B /* MenuItem.swift */,
+				ED5876B6226AEAE70011741B /* SampleData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED5876B0226AE77C0011741B /* MainTableViewController.swift in Sources */,
+				ED5876B5226AE8920011741B /* MenuItem.swift in Sources */,
 				ED58769B226AE53E0011741B /* AppDelegate.swift in Sources */,
+				ED5876B7226AEAE70011741B /* SampleData.swift in Sources */,
 				ED5876B3226AE7C80011741B /* RoundedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
